@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HasilActivity">
+
+    <TextView
+        android:id="@+id/hasilTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hasil"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/burgerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:text="Burger"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hasilTitleText" />
+
+    <TextView
+        android:id="@+id/hasilBurgerCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/hasilBurgerPrice"
+        app:layout_constraintStart_toEndOf="@+id/burgerText"
+        app:layout_constraintTop_toBottomOf="@+id/hasilTitleText" />
+
+    <TextView
+        android:id="@+id/hasilBurgerPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:text="Rp. 0"
+        app:layout_constraintStart_toEndOf="@+id/burgerText"
+        app:layout_constraintTop_toBottomOf="@+id/hasilTitleText" />
+
+    <TextView
+        android:id="@+id/hasilTotalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="44dp"
+        android:text="Total"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/burgerText" />
+
+    <TextView
+        android:id="@+id/hasilTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="80dp"
+        android:text="Rp. 0"
+        app:layout_constraintStart_toEndOf="@+id/hasilTotalText"
+        app:layout_constraintTop_toBottomOf="@+id/hasilTitleText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
